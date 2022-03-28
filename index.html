@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Assessment - Yang Tuấn Anh</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Tehchnical Assignment - Yang Tuấn Anh</h1>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Câu hỏi
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" data-bs-toggle="collapse" href="#collapseOne">Câu 1</a></li>
+          <li><a class="dropdown-item" data-bs-toggle="collapse" href="#collapseTwo"href="#">Câu 2</a></li>
+          <li><a class="dropdown-item" data-bs-toggle="collapse" href="#collapseThree"href="#">Câu 3</a></li>
+        </ul>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Câu 1: Khi truy cập 1 trang web (VD: https://geekadventure.vn) trình duyệt sẽ làm gì?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <p>
+                    Khi gõ “https://geekadventure.vn” vào trình duyệt, điều đầu tiên xảy ra là Máy chủ tên miền (DNS) khớp “geekadventure.vn” với một địa chỉ IP. 
+                    Sau đó, trình duyệt sẽ gửi một yêu cầu HTTP đến máy chủ và máy chủ sẽ gửi lại phản hồi HTTP. 
+                    Trình duyệt bắt đầu hiển thị HTML trên trang đồng thời yêu cầu bất kỳ tài nguyên bổ sung nào như CSS, JavaScript, hình ảnh, v.v. 
+                    Mỗi yêu cầu tiếp theo sẽ hoàn thành một chu kỳ yêu cầu / phản hồi và được trình duyệt hiển thị lần lượt. 
+                    Sau đó, khi trang được tải, một số trang web sẽ thực hiện thêm các yêu cầu không đồng bộ.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Câu 2: Khác nhau giữa Desktop First và Mobile First trong Web responsive implementation là gì?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>Desktop First Implementation</strong>
+                <p>Thiết kế cho màn hình có kích thước đầy đủ có nghĩa là xây dựng các thông số kỹ thuật cao nhất để hiển thị và giao tiếp nhiều nhất có thể. 
+                    Trong kiểu thiết kế này, đó không phải là thiết bị di động mà là trải nghiệm trên máy tính để bàn cần phải chi tiết và năng động.
+                <br>
+                    Giảm xuống độ phân giải nhỏ hơn (thường được gọi là giảm cấp duyên dáng) có nghĩa là ẩn và gói các phần tử trong khi cố gắng hỗ trợ càng nhiều tính năng gốc càng tốt. 
+                    Trong trường hợp này, trải nghiệm di động là chức năng chứ không phải là tinh chỉnh.
+                <br>    
+                    Thiết kế máy tính để bàn mạnh mẽ là lý tưởng cho các trang web và giao diện giàu tính năng nhắm mục tiêu đến người dùng máy tính để bàn (thường là văn phòng), 
+                    đặc biệt nếu có một ứng dụng Android hoặc iOS riêng cho các tính năng cốt lõi sẽ phục vụ tối ưu hóa trải nghiệm cho người dùng di động.
+                </p>
+                <strong>Mobile First Implementation</strong>
+                <p>
+                    Đầu tiên di động được thiết kế chủ yếu cho chức năng. 
+                    Đó là một cách tiếp cận rất tập trung bắt đầu bằng việc đưa ra một chức năng cốt lõi và xếp lớp các tính năng bổ sung tăng dần để có độ phân giải cao hơn (thường được gọi là cải tiến liên tục). 
+                    Chiến lược ưu tiên thiết bị di động thường được gọi là chiến lược ưu tiên nội dung vì nội dung trang web của bạn phải được nghiên cứu và cấu trúc cẩn thận để được phân loại dựa trên mức độ quan trọng. 
+                    Phương pháp này có thể tốn kém hơn nhiều do giai đoạn chuẩn bị kéo dài hơn và kiến thức chuyên môn cần thiết để tạo ra tính linh hoạt của nền tảng.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Câu 3: Nếu có 2 CSS Selectors cùng ứng với 1 element thì style của selector nào sẽ được ưu tiên hơn?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <p>
+                    Nếu có hai hoặc nhiều CSS selectors xung đột đến cùng một element, trình duyệt sẽ tuân theo một số quy tắc để xác định quy tắc nào cụ thể nhất và do đó sẽ lấn qua.
+                    Các universal selectors (*) có độ đặc hiệu thấp, trong khi ID selectors có độ đặc hiệu cao! Cụ thể:
+                    <ul>
+                        <li>
+                            Type selectors (e.g., h1) và pseudo-elements (e.g., ::before).
+                        </li>
+                        <li>
+                            Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) và pseudo-classes (e.g., :hover).
+                        </li>
+                        <li>
+                            ID selectors (e.g., #example).
+                        </li>
+                        <li>
+                            Universal selector (*), combinators (+, >, ~, ' ', ||) và negation pseudo-class (:not()) thường không tác động đến thứ tự ưu tiên. 
+                        (Các selectors bên trong :not() là ngoại lệ.)
+                        </li>
+                    </ul>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
